@@ -2,8 +2,6 @@
 const friends = [
     {
         name: "friend1",
-        occupation: "developer",
-        age: 32,
         photo: "",
         scores: [
             1,
@@ -20,8 +18,6 @@ const friends = [
     },
     {
         name: "friend2",
-        occupation: "singer",
-        age: 26,
         photo: "",
         scores: [
             5,
@@ -38,8 +34,6 @@ const friends = [
     },
     {
         name: "friend3",
-        occupation: "coal miner",
-        age: 45,
         photo: "",
         scores: [
             10,
@@ -55,3 +49,5 @@ const friends = [
         ]
     }
 ]
+
+module.exports = friends;
