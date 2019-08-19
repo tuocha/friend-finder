@@ -6,113 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>friend finder survey</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./survey.css" type="text/css">
+
 </head>
 
 <body>
-    <form>
-        name:<br>
-        <input type="text" name="name" id="survey-name"><br>
-        image:<br>
-        <input type="text" name="image" id="survey-image">
-        <br><br>
+    <div class="all">
+        <h1>questionnaire</h1>
+        <hr>
 
-        question 1:<br>
-        <select id="q1" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 2:<br>
-        <select id="q2" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 3:<br>
-        <select id="q3" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 4:<br>
-        <select id="q4" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 5:<br>
-        <select id="q5" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 6:<br>
-        <select id="q6" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 7:<br>
-        <select id="q7" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 8:<br>
-        <select id="q8" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 9:<br>
-        <select id="q9" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br><br>
-        question 10:<br>
-        <select id="q10" class="survey-answers">
-            <option value="1">1 (disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (agree)</option>
-        </select>
-        <br>
-        <input type="submit" value="ok" id="submit">
+        <form>
+            <div class="form-group">
+                <label for="name">name:</label>
+                <input type="email" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="image">image URL:</label>
+                <input type="input" class="form-control" id="image">
+            </div>
+            <hr>
+            <br>
 
-    </form>
+            <h2>survey questions</h2><br><br>
+            <p class="survey-questions">You feel energized by the prescence of others.</p>
+            <select id="q1" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You quickly grasp new concepts.</p>
+            <select id="q2" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You have a spiritual side that sometimes supercedes your logical side.</p>
+            <select id="q3" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You are impatient about things concerning yourself.</p>
+            <select id="q4" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You grow exhausted after talking for a long period of time.</p>
+            <select id="q5" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You like to travel.</p>
+            <select id="q6" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You are attracted to people and projects that you can "fix".</p>
+            <select id="q7" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You are methodical and like to plan things.</p>
+            <select id="q8" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You are easily upset by mean people.</p>
+            <select id="q9" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <p class="survey-questions">You think everyone should share your values and ideals.</p>
+            <select id="q10" class="survey-answers form-control">
+                <option value="1">1 (disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (agree)</option>
+            </select>
+            <br><br>
+            <input type="submit" class="btn btn-primary" value="submit" id="submit">
+            <br><br>
+            <hr>
+        </form>
+    </div>
 </body>
 
 <footer>
-    <a href="/api/friends">API friends</a>
+    <a href="/api/friends">API friends list</a> | 
+    <a href="https://tuocha.github.io/friend-finder/" target="\_blank">Github repo</a>
+    <br><br><br><br><br><br><br>
 </footer>
 
 <script type="text/javascript">
@@ -167,20 +187,29 @@
 
 
         // here I should be comparing the newFriend.scores to all the other scores arrays. gotta find the logic for this
-        
-        // fetch(url, {
-        //     method: "GET"
-        // }).then(data => {
-            // function totalDifference() {
-            //     differenceArray = [];
 
-                // for (let i=0; i<data.length; i++) {
-                //     data[i].scores
-                // }
-        //     }
-
-        // })
     })
+    fetch("/api/friends", {
+        method: "GET",
+        body: JSON.stringify(),
+        headers: {
+            "content-type": "application/json"
+        }
+
+    }).then(res => res.json())
+        .then(data => {
+            console.log(data)
+            for (let i = 0; i < data.length; i++) {
+                dataScores = data[i].scores
+                // userScores = newFriend.scores;
+                let comparitor = {}
+                console.log(dataScores)
+                // console.log(data[i].scores)
+                // if ()
+            }
+
+        })
+
 
 </script>
 
